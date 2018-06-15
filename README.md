@@ -36,6 +36,7 @@ Similar for the Client, open as many as you want
 cd target/classes 
 java rmi.rmitter.Client
 ```
+<img src="deploy.png">
 
 <br>
 <br>
