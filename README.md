@@ -20,6 +20,25 @@ a Java distributed application resembling Twitter allowing multiple clients to i
 
 <br>
 <br>
+
+### Build and Deployment
+Requires JAVA and Maven, compile as follow
+```bash
+mvn compile
+```
+Open a bash terminal for the Server, and go inside target/classes
+```bash
+cd target/classes 
+java rmi.rmitter.Server
+```
+Similar for the Client, open as many as you want
+```bash
+cd target/classes 
+java rmi.rmitter.Client
+```
+
+<br>
+<br>
 <br>
 <p>* the projects follow the guidelines of the "Software Engineering project" course at Politecnico di Milano, [https://github.com/affo/ingsoft-project]</p>
 
