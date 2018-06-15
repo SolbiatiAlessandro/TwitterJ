@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rmi.rmitter.view.FXMLGui">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About TwitterJ" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Circle fill="#396997" layoutX="55.0" layoutY="162.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#5c9dda" layoutX="23.0" layoutY="62.0" radius="48.0" stroke="BLACK" strokeType="INSIDE" />
+            <TextField fx:id="username" layoutX="327.0" layoutY="14.0" onAction="#loginPressed" />
+            <TextField fx:id="follow" layoutX="327.0" layoutY="49.0" onAction="#followPressed" />
+            <TextField fx:id="hashtag" layoutX="327.0" layoutY="87.0" onAction="#hashtagPressed" />
+            <Circle fill="#c3e2ff" layoutX="536.0" layoutY="80.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#658db2" layoutX="550.0" layoutY="62.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+            <Text layoutX="179.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your username:">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="207.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Follow @someone:">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="217.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Follow #hashtag:">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Text>
+            <TextField id="post" fx:id="post" layoutX="146.0" layoutY="315.0" onAction="#enterPressed" prefHeight="27.0" prefWidth="360.0" />
+            <TextArea fx:id="feed" layoutX="146.0" layoutY="135.0" prefHeight="180.0" prefWidth="360.0" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
